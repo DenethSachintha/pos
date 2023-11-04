@@ -6,7 +6,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import org.hibernate.Hibernate;
 import org.hibernate.Session;
 
 import java.io.IOException;
@@ -26,7 +25,8 @@ public class AppInitializer extends Application {
         try(Session session= HibernateUtil.getSession()) {
 
         }
-    }
+
+        }
 /*
     private void initializeData(){
         UserRoleDao userRoleDao= new UserRoleDaoImpl();
@@ -65,6 +65,7 @@ public class AppInitializer extends Application {
 
     }
 */
+    private void InitializeData(){}
 }
 
 
